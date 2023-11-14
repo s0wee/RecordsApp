@@ -67,7 +67,6 @@ for ($i = 1; $i <= 500; $i++) {
     $action = "Action " . $i;
     $remarks = "Remarks " . $i;
     $documentcode = "DOC" . str_pad($i, 3, "0", STR_PAD_LEFT);
-    
     $sql = "INSERT INTO Transaction (employee_id, office_id, datelog, action, remarks, documentcode) VALUES ($employee_id, $office_id, '$datelog', '$action', '$remarks', '$documentcode')";
     $conn->query($sql);
 }
